@@ -33,6 +33,8 @@ def check_guess(guess, secret):
     if guess == secret:
         return "Win", "🎉 Correct!"
 
+
+# FIXME: Logic breaks here - logic is correct but "Go xxxxx" text is reversed in both the try and except blocks
     try:
         if guess > secret:
             return "Too High", "📈 Go HIGHER!"
@@ -154,7 +156,7 @@ if submit:
         st.error(err)
     else:
         st.session_state.history.append(guess_int)
-
+# FIXME: Logic breaks here - when the # of attempts is even, the secret is converted to a string
         if st.session_state.attempts % 2 == 0:
             secret = str(st.session_state.secret)
         else:

@@ -5,8 +5,14 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 ## 1. What was broken when you started?
 
 - What did the game look like the first time you ran it?
+  The game produced a decent looking webpage and appeared correct to begin a new game.
+
 - List at least two concrete bugs you noticed at the start  
-  (for example: "the secret number kept changing" or "the hints were backwards").
+  1- When a guess was made that was lower than the secret value, the hint said to "Go lower" and when a guess was higher than the secret value, the hint was to "Go higher.
+  2- After a successful guess, the game indicates a win. Then when the "new game" button is clicked:
+    * the banner indicating the game was won does not go away.
+    * a new secret value is generated, but subsequent guesses do not produce any hints, the guess value is not added to the history list, and the attempts count is not incremented.
+
 
 ---
 
