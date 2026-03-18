@@ -5,22 +5,26 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 ## 1. What was broken when you started?
 
 - What did the game look like the first time you ran it?
-  The game produced a decent looking webpage and appeared correct to begin a new game.
+  The game produced a decent looking webpage and appeared correctly setup to begin a new game.
 
 - List at least two concrete bugs you noticed at the start  
   1- When a guess was made that was lower than the secret value, the hint said to "Go lower" and when a guess was higher than the secret value, the hint was to "Go higher.
-  2- After a successful guess, the game indicates a win. Then when the "new game" button is clicked:
+  2- When a guess matches the secret, the game correctly indicates a win. Then when the "new game" button is clicked:
     * the banner indicating the game was won does not go away.
-    * a new secret value is generated, but subsequent guesses do not produce any hints, the guess value is not added to the history list, and the attempts count is not incremented.
-
-
+    * a new secret value is generated, but:
+       * subsequent guesses do not produce any hints
+       * the guess value is not added to the history list
+       * the attempts count is not incremented.
 ---
 
 ## 2. How did you use AI as a teammate?
 
 - Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
+  * Claude
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
+  * Claude correctly suggested a correction to the "guess higher/lower" hints and logic.
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
+  * 
 
 ---
 
