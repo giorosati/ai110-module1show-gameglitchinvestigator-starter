@@ -25,9 +25,15 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [x] Describe the game's purpose.
+The game choose a secret number and allows the user a set number of attempts to correctly guess the number. It has three levels of difficulty.
+- [x] Detail which bugs you found.
+Hints for guesses were backwards, ie. "Guess higher" then the opposite was true.
+Comparison of guesses to the secret number were sometimes incorrect because 50% of the time the secret number was converted to a string.
+Guesses were not correctly added to a list of guesses.
+The difficulty selector (Easy, Normal, Hard) was not correctly setup and also did not display the correct information after a difficulty was selected.
+- [x] Explain what fixes you applied.
+
 
 ## 📸 Demo
 
