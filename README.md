@@ -33,11 +33,19 @@ Comparison of guesses to the secret number were sometimes incorrect because 50% 
 Guesses were not correctly added to a list of guesses.
 The difficulty selector (Easy, Normal, Hard) was not correctly setup and also did not display the correct information after a difficulty was selected.
 - [x] Explain what fixes you applied.
+Corrected the guess number hint logic.
+Removed the code that changed the secret number to text after 50% of the guesses.
+Corrected the difficulty settings and display
+Corrected the code that added each guess to the list of guesses when either the enter key was pressed or the guess button was clicked.
+Corrected the tests in test_game_logic
+All tests passed image in this repo (test_results.jpg)
 
 
 ## 📸 Demo
 
-- [ ] [Insert a screenshot of your fixed, winning game here]
+- [x] [Insert a screenshot of your fixed, winning game here]
+https://imgur.com/a/BN2rkur
+
 
 ## 🚀 Stretch Features
 
